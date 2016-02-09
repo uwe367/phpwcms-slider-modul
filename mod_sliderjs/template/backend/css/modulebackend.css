@@ -1,0 +1,318 @@
+/*overwrites/adds to phpwcms.css*/
+.error_message {
+    color: #FF0000;
+}
+.errorInputText {
+    color: #DE8C71;
+    background-image: none !important;
+}
+.chatlist {
+    white-space: normal !important;
+}
+label {
+    white-space: normal !important;
+}
+.toggle {
+    cursor:pointer;
+}
+.toggle {
+    vertical-align: baseline;
+    vertical-align: bottom;
+}
+.togglecontent{
+    width:100%;
+    text-align: left;
+}
+
+/*Slider JS specific CSS*/
+
+/*table*/
+.br_module_table td,
+.br_module_table th,
+.br_module_table_preview td {
+    color: #406C94;
+    font-size: 11px;
+    white-space: normal;
+}
+
+.br_module_table,
+.br_module_table_preview {
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+}
+
+.br_module_table tr > td:first-child {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.br_module_table .br_module_firsttdwidth {
+    width: 110px;
+}
+
+/**/
+.br_module_table input[type=text] {
+    width: 300px;
+    font-size: 11px;
+    font-weight: bold;
+    height: 16px;
+}
+.br_module_table textarea {
+    width: 300px;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.br_module_table input[type=submit] {
+    font-size: 11px;
+    font-weight: normal;
+    width: auto;
+    padding: 3px;
+}
+
+.br_module_table select {
+    font-size: 11px;
+    font-weight: normal;
+    height: 20px;
+}
+
+.br_module_table input[type=text].br_module_w40 {
+    width: 40px;
+}
+
+/*titles*/
+.br_module_title,
+.br_module_table .br_module_title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: #406C94;
+}
+
+.br_module_subtitle {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    text-align: left;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #94B1CA;
+}
+
+/*content*/
+.br_module_text {
+    color: #406C94;
+    font-size: 10px;
+    font-weight: normal;
+    white-space: normal;
+    letter-spacing: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*buttons*/
+.br_module_edit_button {
+    background-color: #FFF;
+    border: 1px solid #92A1AF;
+    color: #325676;
+    padding: 5px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    /*
+    background-color: #406C94;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#406C94), to(#6090BD));
+    background: -webkit-linear-gradient(top, #406C94, #6090BD);
+    background:    -moz-linear-gradient(top, #406C94, #6090BD);
+    background:     -ms-linear-gradient(top, #406C94, #6090BD);
+    background:      -o-linear-gradient(top, #406C94, #6090BD);
+    */
+}
+
+.br_module_edit_button:hover {
+    -moz-box-shadow: 0px 0px 3px 0 #999;
+    -webkit-box-shadow: 0px 0px 3px 0 #999;
+    box-shadow: 0px 0px 3px 0 #999;
+}
+
+/*Links*/
+.chatlist a.br_module_a,
+a.br_module_a,
+.br_module_text a,
+.br_module_table td a {
+    text-decoration: underline;
+}
+
+
+/*Backend CP SliderJS*/
+/*FOLDERLIST*/
+ul.br_module_jqs_folderlist,
+ul.br_module_jqs_folderlist li,
+ul.br_module_jqs_folderlist li ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.br_module_jqs_folderlist li {
+    padding-left: 10px;
+    line-height: 14px;
+    border-top: 1px solid #dddddd;
+    clear: both;
+    padding-top: 0;
+}
+
+/*home*/
+.br_module_jqs_folderlist_first {
+    padding-left: 0;
+}
+
+.br_module_jqs_folderlist_li {
+    letter-spacing: 1px;
+}
+
+.br_module_jqs_folderlist_li:hover {
+    background-color: #F3F5F8;
+}
+
+.br_module_jqs_folderlist_li:hover ul {
+    background-color: #ffffff;
+}
+
+span.br_module_jqs_folderlist_openlink {
+    display: inline-block;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.br_module_jqs_folderlist_li span.closed {
+    background: url("../../../img/arrow_closed.gif") no-repeat top left;
+}
+
+.br_module_jqs_folderlist_li span.opened {
+    background: url("../../../img/arrow_opened.gif") no-repeat top left;
+}
+
+.br_module_jqs_folderlist_li div {
+    margin: 0;
+    /*display:none;*/
+    height: auto;
+}
+
+.br_module_jqs_folderlist_li > div.closed {
+    display: none;
+}
+
+.br_module_jqs_folderlist_li > div.opened {
+    display: block;
+}
+
+.br_module_jqs_folderlist_li div img {
+    margin: 0;
+}
+
+/*images and inputs in expanded folders*/
+.br_module_jqs_folderlist_li .jqs_div {
+    position: relative;
+    float: left;
+    width: 90%;
+    clear: both;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.br_module_jqs_folderlist_li div.jqs_imgdiv {
+    float: left;
+    min-height: 75px;
+    margin-right: 5px;
+}
+.br_module_jqs_folderlist_li div.jqs_cntdiv {
+    float: left;
+    width: 300px;
+    min-height: 75px;
+}
+
+.br_module_jqs_folderlist_li .jqs_imgtitle {
+    float: left;
+    width: 250px;
+    font-size: 10px;
+}
+
+.br_module_jqs_folderlist_li .jqs_imgdescr {
+    float: left;
+    width: 250px;
+    font-size: 10px;
+}
+.br_module_jqs_folderlist_li .jqs_imgcss {
+    float: left;
+    width: 150px;
+    font-size: 10px;
+}
+.jqs_wysiwyg_opener {
+    cursor: pointer;
+    padding: 3px;
+    float: left;
+    width: 94px;
+}
+
+/*PLUGINS*/
+/*tabs*/
+h1.title{}
+#tabsG{}
+
+
+/*module body*/
+#br_module_body{}
+.br_module_listing{float:left;width:100%;}
+
+/*(table) rows*/
+div.br_module_listing_row {}
+div.br_module_listing_row.even {
+    /*background-color: #F3F5F8;*/
+}
+div.br_module_listing_row:hover {
+    background-color: #F3F5F8;
+}
+
+/*overview*/
+.br_module_overview_cont{width:100%;float:left;clear: both;border-top:1px solid #819EB9;padding-top:5px;}
+.br_module_overview_loc{width:40%;float:left;margin-right:10px;margin-bottom:5px;}
+.br_module_overview_det{width:58%;float:left;}
+
+/*size width height*/
+.br_module_spaceh10 {
+    height: 10px;
+    clear:both;
+}
+.br_module_w200 {
+    width: 200px;
+}
+.br_module_w300 {
+    width: 300px;
+}
+.br_module_spaceh5 {
+    height: 5px;
+}
+.br_module_f11b {
+    font-size: 11px;
+    font-weight: bold;
+}
+/*draw a line*/
+.br_module_spacedot {
+    height: 5px;
+    border-top: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+/*footer*/
+div#br_module_footer {
+    border-top: 1px solid #92A1AF;
+    padding: 3px;
+    width: 100%;
+    color: #406C94;
+    font-size: 10px;
+    clear: both;
+}
