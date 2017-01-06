@@ -13,6 +13,9 @@
   - SlidesJS 3.0 http://www.slidesjs.com/ Created by "Nathan Searles" - Licensed under the Apache License, Version 2.0 http://www.apache.org/licenses/LICENSE-2.0
   - bxSlider 4.1.1 http://bxslider.com/ - Written by Steven Wanderski - Released under the WTFPL license - http://sam.zoy.org/wtfpl/
   - Nivo Slider v3.2 http://nivo.dev7studios.com Copyright 2012, Dev7studios Free to use and abuse under the MIT license.
+  - Camera Slider by Pixedelic.com
+
+
 
   SliderJS Module License:
   GNU General Public License version 2, or (at your option) any later version
