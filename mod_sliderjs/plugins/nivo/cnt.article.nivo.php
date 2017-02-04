@@ -31,8 +31,11 @@ foreach ($mod_sliderjs['br_sliderjs']['data'] as $key => $value) {
 //when caption enabled
         if ( $content['br_sliderjs']['nivo']['jqs_caption'] == 1 && !empty($value['jqs_descr']) ) {
 //leave HTML in description
-            $mod_sliderjs['br_sliderjs']['imglist'] .= '<img src="' . PHPWCMS_IMAGES . $value['jqs_image'][0] . '" title="#' .$value['f_hash'] . '" alt="' . clean_replacement_tags($value['jqs_title'],'') . '" />' . LF;
-
+            $mod_sliderjs['br_sliderjs']['imglist'] .= '<img src="' . PHPWCMS_IMAGES . $value['jqs_image'][0] . '" title="#' .$value['f_hash'] . '" alt="' . clean_replacement_tags($value['jqs_title'],'') . '"';
+            if ( isset($content['br_sliderjs']['nivo']['jqs_thumbnav']) && $content['br_sliderjs']['nivo']['jqs_thumbnav'] == 1){
+                $mod_sliderjs['br_sliderjs']['imglist'] .= 'data-thumb="' . PHPWCMS_IMAGES . $value['jqs_image'][0] . '"';
+            }
+            $mod_sliderjs['br_sliderjs']['imglist'] .= ' />' . LF;
             if ( !empty($value['jqs_css']) ) {
                 $mod_sliderjs['br_sliderjs']['caplist'] .= '<div id="'.$value['f_hash'].'" class="nivo-html-caption">';
                 $mod_sliderjs['br_sliderjs']['caplist'] .= '<div class="'.clean_replacement_tags($value['jqs_css']).'">'.$value['jqs_descr'].'</div></div>' . LF;
@@ -41,7 +44,11 @@ foreach ($mod_sliderjs['br_sliderjs']['data'] as $key => $value) {
             }
 
         } else {
-            $mod_sliderjs['br_sliderjs']['imglist'] .= '<img src="' . PHPWCMS_IMAGES . $value['jqs_image'][0] . '" />' . LF;
+            $mod_sliderjs['br_sliderjs']['imglist'] .= '<img src="' . PHPWCMS_IMAGES . $value['jqs_image'][0] . '"';
+            if ( isset($content['br_sliderjs']['nivo']['jqs_thumbnav']) && $content['br_sliderjs']['nivo']['jqs_thumbnav'] == 1){
+                $mod_sliderjs['br_sliderjs']['imglist'] .= 'data-thumb="' . PHPWCMS_IMAGES . $value['jqs_image'][0] . '"';
+            }
+            $mod_sliderjs['br_sliderjs']['imglist'] .= ' />' . LF;
         }
         //$mod_sliderjs['br_sliderjs']['imglist'] .= $value['jqs_image'][3].' alt="'.$img_desc.'" border="0" />'.LF;
     }
@@ -71,7 +78,8 @@ $mod_sliderjs['br_sliderjs']['output'] .= '
         startSlide: 0,
         directionNav: '.jqsIsValid($content['br_sliderjs']['nivo']['jqs_navigation']).',
         controlNav: '.jqsIsValid($content['br_sliderjs']['nivo']['jqs_pagination']).',
-        controlNavThumbs: false,
+        controlNavThumbs: '.jqsIsValid($content['br_sliderjs']['nivo']['jqs_thumbnav']).',
+        controlNavThumbsFromRel: false,
         pauseOnHover: '.jqsIsValid($content['br_sliderjs']['nivo']['jqs_pauseOnHover']).',
         manualAdvance: '.jqsIsValid($content['br_sliderjs']['nivo']['jqs_autoplay'],'false','true').',
         prevText: "<<", // Prev directionNav text

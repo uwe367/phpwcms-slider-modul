@@ -86,7 +86,13 @@
             <label for="jqs_nivo_pagination"><?php echo $BL['modules'][$content["module"]]['jqs_pagination']; ?></label>&nbsp;&nbsp;<?php echo $BL['modules'][$content["module"]]['jqs_pagination2'] ?>
         </td>
     </tr>
-
+    <tr>
+        <td></td>
+        <td>
+            <input type="checkbox" name="jqs_nivo_thumbnav" id="jqs_nivo_thumbnav" value="1" <?php is_checked(1, $content['br_sliderjs']['nivo']['jqs_thumbnav']); ?> />
+            <label for="jqs_nivo_thumbnav"><?php echo $BL['modules'][$content["module"]]['jqs_nivo_thumbnav']; ?></label>&nbsp;&nbsp;<?php echo $BL['modules'][$content["module"]]['jqs_nivo_thumbnav2'] ?>
+        </td>
+    </tr>
 <!-- tr>
 <td></td>
 <td><input type="checkbox" name="jqs_nivo_play" id="jqs_nivo_play" value="1" <?php is_checked(1, $content['br_sliderjs']['nivo']['jqs_play']); ?> />
@@ -94,12 +100,14 @@
 </tr -->
 
     <!-- effect section -->
+
+    <tr><td colspan="2"><div class="br_module_spaceh10"></div></td></tr>
     <tr>
         <td></td>
         <td>
             <table>
                 <tr>
-                    <td><?php echo $BL['modules'][$content["module"]]['jqs_effect3'] ?></td>
+                    <td style="text-align: left"><?php echo $BL['modules'][$content["module"]]['jqs_effect3'] ?></td>
                     <td><?php echo $BL['modules'][$content["module"]]['jqs_speed'] ?></td>
                 </tr>
                 <tr>

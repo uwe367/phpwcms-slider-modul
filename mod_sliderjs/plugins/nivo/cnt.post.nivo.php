@@ -32,4 +32,5 @@ $content['br_sliderjs']['nivo']['jqs_pauseOnHover'] = empty($_POST['jqs_nivo_pau
 $content['br_sliderjs']['nivo']['jqs_play'] = empty($_POST['jqs_nivo_play']) ? 0 : 1;
 $content['br_sliderjs']['nivo']['jqs_speed'] = empty($_POST['jqs_nivo_speed']) ? '200' : intval($_POST['jqs_nivo_speed']);
 $content['br_sliderjs']['nivo']['jqs_theme'] = empty($_POST['jqs_nivo_theme']) ? 'default' : clean_slweg($_POST['jqs_nivo_theme']);
+$content['br_sliderjs']['nivo']['jqs_thumbnav'] = empty($_POST['jqs_nivo_thumbnav']) ? 0 : 1;
 $content['br_sliderjs']['nivo']['plugin_name'] = 'NIVO SLIDER';

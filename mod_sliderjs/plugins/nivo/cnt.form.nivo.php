@@ -38,5 +38,6 @@ $mod_sliderjs['br_sliderjs_default']['nivo'] = array(
     'jqs_pauseOnHover' => 0,
     'jqs_play'         => 0,
     'jqs_speed'        => 200,
-    'jqs_theme'        => 'default'
+    'jqs_theme'        => 'default',
+    'jqs_thumbnav'    => 0
 );
